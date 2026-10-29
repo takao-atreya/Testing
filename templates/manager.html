@@ -3,22 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manager Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dashboard.css') }}">
 </head>
 
-<body>
+<body class="dashboard employee-page">
 
-    <h1>Manager Dashboard</h1>
+    <!-- Navigation Bar -->
+    <header class="topbar">
+        <h1>Manager Dashboard</h1>
+        <span class="role-name">Employee</span>
+    </header>
 
-    <p>Welcome to the manager section.</p>
+    <!-- Main Content -->
+    <main class="dashboard-content">
 
-    <h2>Machine Management</h2>
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h2>Welcome Back!</h2>
+            <p>Welcome to the Manager section.</p>
+        </section>
 
-    <button>View Machines</button>
-    <button>Add Machine</button>
-    <button>Remove Machine</button>
-    <button>Update Machine</button>
+        <!-- Machine Management -->
+        <section class="content-card">
+
+            <h3>Machine Management</h3>
+
+            <p>View and manage Machine & Maintenance records.</p>
+
+            <button class="btn btn-blue">
+                Machine Records
+            </button>
+
+            <button class="btn btn-green">
+                 Maintenance Record
+            </button>
+
+        </section>
+
+    </main>
 
 </body>
-
 </html>
